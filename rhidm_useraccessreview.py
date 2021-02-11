@@ -48,7 +48,13 @@ for row in listofusers:
     pretty_print.pprint(json.dumps(row))
  
 print "\n"
- 
+
+# write to file for later import to excel
+header_user = ['USER NAME', 'FULL NAME', 'GROUPS']
+with open('listofusers.csv', 'wb') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(header_user)
+    writer.writerows(listofusers)
 
 # Get all user groups
 #grouplist = client.group_find(posix=True)
