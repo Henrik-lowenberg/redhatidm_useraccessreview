@@ -27,8 +27,8 @@ import pprint
 import csv
  
 # get login credentials
-client = ClientMeta("segotl6204.idm.it.hclgss.com")
-client.login("api-reader","api12345")
+client = ClientMeta("idmreplica1.idm.example.com")
+client.login("api-reader","somepassword")
  
 # Function to convert list to string
 def listToString(s):
