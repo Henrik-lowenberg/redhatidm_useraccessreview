@@ -1,5 +1,12 @@
 #!/usr/bin/python
 # Creator: Henrik Löwenberg
+# The purpose of this script
+# is to extract all components
+# that makes up a users access to a server
+# that can serve as a user access review report
+# this can be combined with AD groups and user accounts
+# from MS AD
+#Prerequisity:
 # create local idm user api_reader
 # create new role api-reader
 # assign IPA Masters Readers to that role
