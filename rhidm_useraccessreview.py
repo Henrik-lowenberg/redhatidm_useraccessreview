@@ -212,20 +212,14 @@ for row in sudocmdresult:
 
 #for row in listofsudocmdgroups:
 #    print(json.dumps(row))
+
 #print "\n"
-sarss, 
- 
 
 header_sudocmdgroups = ['SUDOCMDGROUP NAME', 'SUDO CMD']
-
 with open('listofsudocmdgroups.csv', 'wb') as csvfile:
-
     writer = csv.writer(csvfile, delimiter=';')
-
     writer.writerow(header_sudocmdgroups)
-
     writer.writerows(listofsudocmdgroups)
-
  
 
 # END OF SCRIPT #
