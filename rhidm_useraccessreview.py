@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# Creator: Henrik Löwenberg
 # create local idm user api_reader
 # create new role api-reader
 # assign IPA Masters Readers to that role
@@ -7,8 +8,9 @@
 # Read
 # https://python-freeipa.readthedocs.io/en/latest/
 #
-# How-to install python-freeipa:
+# How-to install python-freeipa and csv:
 # pip install python-freeipa
+# pip install csv
 #
 # Import the freeipa library
 from python_freeipa import ClientMeta
