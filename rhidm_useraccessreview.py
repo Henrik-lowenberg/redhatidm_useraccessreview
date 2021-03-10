@@ -19,6 +19,12 @@
 # pip install python-freeipa
 # pip install csv
 #
+# ToDo:
+# use openpyxl or panda library to actually create excel the file 
+# instead of individual csv files
+# use json.loads to parse indata before writing to excel file
+#
+#
 # Import the freeipa library
 from python_freeipa import ClientMeta
 # pretty print to parse to human-readable output
