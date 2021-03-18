@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Creator: Henrik Löwenberg
+# Creator: Henrik Lowenberg
 # Version: 0.5 Beta
 #
 # The purpose of this script
@@ -192,10 +192,10 @@ def main():
         # loop through list
         for row in listOfUsers:
             try: # check for nestled lists
-                if(isinstance(row, str):
+                if(isinstance(row, str)): # add row if string
                     ws1.append(row)
-                elif(isinstance(row,list): # convert nestled lists to strings
-                    listToString(row)
+                elif(isinstance(row, list)): # convert nestled lists to strings
+                    row = listToString(row)
                     ws1.append(row)
 
             except Exception as e: 
