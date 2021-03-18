@@ -1,28 +1,26 @@
 #!/usr/bin/python
 # Creator: Henrik Löwenberg
+# version: 1.0 Alpha
+#
 # The purpose of this script
 # is to extract all components
 # that makes up a users access to a server
 # that can serve as a user access review report
 # this can be combined with AD groups and user accounts
 # from MS AD
-#Prerequisity:
+#
+# Prerequisity:
 # create local idm user api_reader
 # create new role api-reader
 # assign IPA Masters Readers to that role
 # assign role to user
 # login as user and set new pwd
+#
 # Read
 # https://python-freeipa.readthedocs.io/en/latest/
 #
 # How-to install python-freeipa and csv:
-# pip install python-freeipa
-# pip install csv
-#
-# ToDo:
-# use openpyxl or panda library to actually create excel the file 
-# instead of individual csv files
-# use json.loads to parse indata before writing to excel file
+# pip install python-freeipa python-csv 
 #
 #
 # Import the freeipa library
