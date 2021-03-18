@@ -44,8 +44,8 @@ def main():
     # get rid of unverified HTTPS connection warnings
     urllib3.disable_warnings()
     # get login credentials as global vars
-    client = ClientMeta("ipaserver.hemmahos.mig", verify_ssl=False)
-    client.login("api-user","volvo123")
+    client = ClientMeta("ipaserver.example.com", verify_ssl=False)
+    client.login("api-user","somepwd")
         
 
     def listToString(s): # convert list to string
